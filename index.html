@@ -16,6 +16,8 @@
         background-color: black;
       }
       .main-box {
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px,
+          rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
         height: 500px;
         margin: 100px auto;
         background-color: rgb(86, 85, 84);
@@ -100,7 +102,7 @@
         let min = d.getMinutes();
         let sec = d.getSeconds();
         if (hrs <= 12) {
-          hrs = hrs;
+          hrs = "0" + hrs;
         } else {
           hrs = hrs - 12;
         }
